@@ -6,6 +6,7 @@ public class GetReferenceMessage extends Message{
 	GetReferenceMessage(int targetID){
 		this.targetID = targetID;
 	}
+	
 	private static final long serialVersionUID = 1L;
 
 	public boolean evaluate(PeerImpl peer) {

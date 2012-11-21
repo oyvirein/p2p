@@ -21,7 +21,6 @@ public class EntryMessage extends Message{
 		// If (int)log2(networkSize) > int(log2(networkSize-1)) : expand list by one element.
 		
 		
-		
 		// If new node is in between a connecting. Ask peer X for reference to X-1
 		
 		

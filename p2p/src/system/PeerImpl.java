@@ -90,6 +90,7 @@ public class PeerImpl implements Peer {
 				// ----------------------------- TODO : peers should be expanded first if ID+1 = 2^k for any integer k. 
 				peer.accept(ID+1, peers.clone(), this);
 				
+				
 				if (ID == 1){ // If the network has just one peer
 					prevPeer = peer;
 					peers[0] = peer;

@@ -3,6 +3,7 @@ package system;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 
+
 public interface Peer extends Remote {
 	public void connect(Peer peer) throws RemoteException;
 	public void accept(int ID, Peer[] peers, Peer prevPeer) throws RemoteException;

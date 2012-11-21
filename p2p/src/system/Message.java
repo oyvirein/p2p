@@ -11,6 +11,7 @@ public abstract class Message implements Cloneable, Serializable{
 	public void broadcast(Peer[] peers){
 		if (peers == null){
 			return;
+			
 		}else{
 			for (int i = 0; i < peers.length; i++){
 				try {
