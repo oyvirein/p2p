@@ -11,5 +11,6 @@ public class StringMessage extends Message{
 		System.out.println(string);
 		return false;
 	}
+	
 
 }
