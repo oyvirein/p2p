@@ -171,9 +171,7 @@ public class PeerImpl implements Peer {
 				Message msg;
 				try {
 					msg = messages.take();
-					if (msg.evaluate(peer)){
-						msg.broadcast(peers); // TODO : This is currently a blocking function. Should be non-blocking
-					}
+					msg.action(peer);
 				} catch (InterruptedException e) {
 					System.out.println("ERROR: MessageProxy()");
 					e.printStackTrace();

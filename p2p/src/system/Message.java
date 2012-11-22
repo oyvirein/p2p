@@ -6,7 +6,7 @@ import java.rmi.RemoteException;
 public abstract class Message implements Cloneable, Serializable{
 	private static final long serialVersionUID = 1L;
 	
-	public abstract boolean evaluate(PeerImpl peer); // Input: this. Responds to message and returns true if it should be broadcasted further.
+	public abstract void action(PeerImpl peer); // Input: this. Responds to message. Can forward message with send() and broadcast() with broadcast.
 	
 	public void broadcast(Peer[] peers){
 		if (peers == null){

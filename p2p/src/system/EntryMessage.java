@@ -11,9 +11,9 @@ public class EntryMessage extends Message{
 		this.newPeer = newPeer;
 	}
 	
-	public boolean evaluate(PeerImpl peer) {
+	public void action(PeerImpl peer) {
 		if (peer.networkSize == ID){
-			return false;
+			return;
 		}
 		
 		
@@ -42,6 +42,7 @@ public class EntryMessage extends Message{
 				}
 			}
 		}
-	return true;
+		this.broadcast(peer.peers);
+		return;
 	}
 }

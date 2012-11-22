@@ -7,10 +7,8 @@ public class StringMessage extends Message{
 		this.string = string;
 	}
 	
-	public boolean evaluate(PeerImpl peer) {
+	public void action(PeerImpl peer) {
 		System.out.println(string);
-		return false;
+		return;
 	}
-	
-
 }
